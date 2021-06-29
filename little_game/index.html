@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../static/css/all.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/lightbox.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>小遊戲</title>
+  </head>
+  <body>
+
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../static/img/favicon.png" class="logo" >&nbsp;Gamevago
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="../index.html">首頁</a>
+          </li>
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="#">小遊戲</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="../countdown/index.html">大作倒數</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">簡單玩個小遊戲</h1>
+          <p>沒錢買遊戲？GAMEVAGO為你準備輕鬆好玩的免費小遊戲</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div id="fas">
+      <button id="settings-btn" class="settings-btn">
+        <i class="fas fa-cog"></i>
+      </button>
+
+      <div id="settings" class="settings">
+        <form id="settings-form">
+          <div>
+            <label for="difficulty">難易度</label>
+            <select id="difficulty">
+              <option value="easy">簡單</option>
+              <option value="medium">中等</option>
+              <option value="hard">困難</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="container1">
+        <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+        <small>輸入以下字串:</small>
+
+        <h1 id="word"></h1>
+
+        <input
+          type="text"
+          id="text"
+          autocomplete="off"
+          placeholder="Type the word here..."
+          autofocus
+        />
+
+        <p class="time-container">剩餘時間: <span id="time">10s</span></p>
+
+        <p class="score-container">分數: <span id="score">0</span></p>
+
+        <div id="end-game-container" class="end-game-container"></div>
+      </div>
+    </div>
+
+    <footer id="main-footer" class="py-4 bg-primary text-white text-center">
+      Copyright &copy;
+      <span class="year"></span> <span class="trivago">GAMEVAGO</span>
+    </footer>   
+
+    <script src="script.js"></script>
+  </body>
+</html>
